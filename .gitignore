@@ -94,8 +94,8 @@ uploads/
 
 # ==================================================
 # Machine Learning
-# (Uncomment if you don't want to track models)
 # ==================================================
+# Uncomment when model artifacts should not be tracked
 # *.pt
 # *.pth
 # *.ckpt
@@ -112,6 +112,11 @@ Desktop.ini
 *~
 
 # ==================================================
-# Git
+# ForestAI Dataset
 # ==================================================
-*.orig
+# Raw datasets are kept locally and must remain immutable.
+data/raw/
+
+# Processed/generated datasets are reproducible outputs
+# and should not be committed to Git.
+data/processed/
